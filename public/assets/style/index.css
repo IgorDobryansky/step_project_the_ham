@@ -130,7 +130,7 @@
     align-items: center;
     background-image: url(../images/sections_background/section-1\(header\).jpg);
     background-position: 50% 50%;
-    background-size: 100% auto;
+    background-size: cover;
     background-attachment: fixed;
 }
 
