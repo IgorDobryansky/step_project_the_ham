@@ -1,17 +1,10 @@
-image: node:10-alpine # use nodejs v10 LTS
-cache:
-  paths:
-    - node_modules/
-
-before_script:
-  - npm install hexo-cli -g
-  - npm install
+image: ruby:2.7
 
 pages:
   script:
-    - hexo generate
+    - gem install bundler
+    - bundle install
+    - bundle exec jekyll build -d public
   artifacts:
     paths:
       - public
-  only:
-    - main
