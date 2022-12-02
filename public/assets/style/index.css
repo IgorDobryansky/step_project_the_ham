@@ -336,6 +336,10 @@
 }
 
 .tab-text {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-left: 15px;
     font-family: 'Montserrat';
     font-style: normal;
