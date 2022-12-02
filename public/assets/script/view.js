@@ -105,63 +105,63 @@ const loadBar = document.querySelectorAll(".load-bar");
 const workTabsArray = [...workTabs];
 
 const graphicDesignImages = [
-  "../assets/images/graphic_design/graphic-design1.jpg",
-  "../assets/images/graphic_design/graphic-design2.jpg",
-  "../assets/images/graphic_design/graphic-design3.jpg",
-  "../assets/images/graphic_design/graphic-design4.jpg",
-  "../assets/images/graphic_design/graphic-design5.jpg",
-  "../assets/images/graphic_design/graphic-design6.jpg",
-  "../assets/images/graphic_design/graphic-design7.jpg",
-  "../assets/images/graphic_design/graphic-design8.jpg",
-  "../assets/images/graphic_design/graphic-design9.jpg",
-  "../assets/images/graphic_design/graphic-design10.jpg",
-  "../assets/images/graphic_design/graphic-design11.jpg",
-  "../assets/images/graphic_design/graphic-design12.jpg",
+  "./assets/images/graphic_design/graphic-design1.jpg",
+  "./assets/images/graphic_design/graphic-design2.jpg",
+  "./assets/images/graphic_design/graphic-design3.jpg",
+  "./assets/images/graphic_design/graphic-design4.jpg",
+  "./assets/images/graphic_design/graphic-design5.jpg",
+  "./assets/images/graphic_design/graphic-design6.jpg",
+  "./assets/images/graphic_design/graphic-design7.jpg",
+  "./assets/images/graphic_design/graphic-design8.jpg",
+  "./assets/images/graphic_design/graphic-design9.jpg",
+  "./assets/images/graphic_design/graphic-design10.jpg",
+  "./assets/images/graphic_design/graphic-design11.jpg",
+  "./assets/images/graphic_design/graphic-design12.jpg",
 ];
 
 const webDesignImages = [
-  "../assets/images/web_design/web-design1.jpg",
-  "../assets/images/web_design/web-design2.jpg",
-  "../assets/images/web_design/web-design3.jpg",
-  "../assets/images/web_design/web-design4.jpg",
-  "../assets/images/web_design/web-design5.jpg",
-  "../assets/images/web_design/web-design6.jpg",
-  "../assets/images/web_design/web-design7.jpg",
-  "../assets/images/web_design/web-design1.jpg",
-  "../assets/images/web_design/web-design2.jpg",
-  "../assets/images/web_design/web-design3.jpg",
-  "../assets/images/web_design/web-design4.jpg",
-  "../assets/images/web_design/web-design5.jpg",
+  "./assets/images/web_design/web-design1.jpg",
+  "./assets/images/web_design/web-design2.jpg",
+  "./assets/images/web_design/web-design3.jpg",
+  "./assets/images/web_design/web-design4.jpg",
+  "./assets/images/web_design/web-design5.jpg",
+  "./assets/images/web_design/web-design6.jpg",
+  "./assets/images/web_design/web-design7.jpg",
+  "./assets/images/web_design/web-design1.jpg",
+  "./assets/images/web_design/web-design2.jpg",
+  "./assets/images/web_design/web-design3.jpg",
+  "./assets/images/web_design/web-design4.jpg",
+  "./assets/images/web_design/web-design5.jpg",
 ];
 
 const landingPageImages = [
-  "../assets/images/landing_page/landing-page1.jpg",
-  "../assets/images/landing_page/landing-page2.jpg",
-  "../assets/images/landing_page/landing-page3.jpg",
-  "../assets/images/landing_page/landing-page4.jpg",
-  "../assets/images/landing_page/landing-page5.jpg",
-  "../assets/images/landing_page/landing-page6.jpg",
-  "../assets/images/landing_page/landing-page7.jpg",
-  "../assets/images/landing_page/landing-page1.jpg",
-  "../assets/images/landing_page/landing-page2.jpg",
-  "../assets/images/landing_page/landing-page3.jpg",
-  "../assets/images/landing_page/landing-page4.jpg",
-  "../assets/images/landing_page/landing-page5.jpg",
+  "./assets/images/landing_page/landing-page1.jpg",
+  "./assets/images/landing_page/landing-page2.jpg",
+  "./assets/images/landing_page/landing-page3.jpg",
+  "./assets/images/landing_page/landing-page4.jpg",
+  "./assets/images/landing_page/landing-page5.jpg",
+  "./assets/images/landing_page/landing-page6.jpg",
+  "./assets/images/landing_page/landing-page7.jpg",
+  "./assets/images/landing_page/landing-page1.jpg",
+  "./assets/images/landing_page/landing-page2.jpg",
+  "./assets/images/landing_page/landing-page3.jpg",
+  "./assets/images/landing_page/landing-page4.jpg",
+  "./assets/images/landing_page/landing-page5.jpg",
 ];
 
 const wordpressImages = [
-  "../assets/images/wordpress/wordpress1.jpg",
-  "../assets/images/wordpress/wordpress2.jpg",
-  "../assets/images/wordpress/wordpress3.jpg",
-  "../assets/images/wordpress/wordpress4.jpg",
-  "../assets/images/wordpress/wordpress5.jpg",
-  "../assets/images/wordpress/wordpress6.jpg",
-  "../assets/images/wordpress/wordpress7.jpg",
-  "../assets/images/wordpress/wordpress8.jpg",
-  "../assets/images/wordpress/wordpress9.jpg",
-  "../assets/images/wordpress/wordpress10.jpg",
-  "../assets/images/wordpress/wordpress1.jpg",
-  "../assets/images/wordpress/wordpress2.jpg",
+  "./assets/images/wordpress/wordpress1.jpg",
+  "./assets/images/wordpress/wordpress2.jpg",
+  "./assets/images/wordpress/wordpress3.jpg",
+  "./assets/images/wordpress/wordpress4.jpg",
+  "./assets/images/wordpress/wordpress5.jpg",
+  "./assets/images/wordpress/wordpress6.jpg",
+  "./assets/images/wordpress/wordpress7.jpg",
+  "./assets/images/wordpress/wordpress8.jpg",
+  "./assets/images/wordpress/wordpress9.jpg",
+  "./assets/images/wordpress/wordpress10.jpg",
+  "./assets/images/wordpress/wordpress1.jpg",
+  "./assets/images/wordpress/wordpress2.jpg",
 ];
 
 const allImages = [
@@ -222,7 +222,7 @@ function createImage(arr) {
       hoverTitle.className = "hover-title";
       hoverSubtitle.href = "#";
       hoverSubtitle.className = "hover-subtitle";
-      hoverLogoImage.src = "../assets/icons/hover-icon.png";
+      hoverLogoImage.src = "./assets/icons/hover-icon.png";
       hoverTitle.innerText = "creative design";
       hoverSubtitle.innerText = "Web Design";
       hover.className = "image-hover";
@@ -255,7 +255,7 @@ function loadMoreCreateImage() {
     hoverTitle.className = "hover-title";
     hoverSubtitle.href = "#";
     hoverSubtitle.className = "hover-subtitle";
-    hoverLogoImage.src = "../assets/icons/hover-icon.png";
+    hoverLogoImage.src = "./assets/icons/hover-icon.png";
     hoverTitle.innerText = "creative design";
     hoverSubtitle.innerText = "Web Design";
     hover.className = "image-hover";
@@ -272,14 +272,14 @@ const randomMonth = Math.floor(Math.random() * 12) + +1;
 const randomNewsItemImage = Math.floor(Math.random() * 8);
 
 const newsItemsArray = [
-  "../assets/images/breaking_news/news1.png",
-  "../assets/images/breaking_news/news2.png",
-  "../assets/images/breaking_news/news3.png",
-  "../assets/images/breaking_news/news4.png",
-  "../assets/images/breaking_news/news5.png",
-  "../assets/images/breaking_news/news6.png",
-  "../assets/images/breaking_news/news7.png",
-  "../assets/images/breaking_news/news8.png",
+  "./assets/images/breaking_news/news1.png",
+  "./assets/images/breaking_news/news2.png",
+  "./assets/images/breaking_news/news3.png",
+  "./assets/images/breaking_news/news4.png",
+  "./assets/images/breaking_news/news5.png",
+  "./assets/images/breaking_news/news6.png",
+  "./assets/images/breaking_news/news7.png",
+  "./assets/images/breaking_news/news8.png",
 ];
 
 // ! People Say section

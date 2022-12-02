@@ -14,7 +14,8 @@ searchIcon.addEventListener("click", () => {
   }
 });
 
-searchButton.addEventListener("click", () => {
+searchButton.addEventListener("click", (e) => {
+  e.preventDefault();
   searchInput.value = "";
   searchInput.style.color = "red";
   searchInput.value = "Oops...";
