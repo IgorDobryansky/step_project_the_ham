@@ -1,14 +1,18 @@
-image: lechten/emacs-tex-org:v2
+image: node:10-alpine # use nodejs v10 LTS
+cache:
+  paths:
+    - node_modules/
+
+before_script:
+  - npm install hexo-cli -g
+  - npm install
 
 pages:
-  stage: deploy
-  before_script:
-  - git submodule sync --recursive
-  - git submodule update --init --recursive
   script:
-  - emacs --batch --load elisp/publish.el --funcall org-publish-all
+    - hexo generate
   artifacts:
     paths:
-    - public
-  rules:
-    - if: $CI_COMMIT_REF_NAME == $CI_DEFAULT_BRANCH
+      - public
+  only:
+    - main
+
