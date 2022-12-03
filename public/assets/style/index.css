@@ -867,6 +867,11 @@
     width: 100%;
 }
 
+.grid-item--gigante {
+    width: 766px;
+    z-index: 2;
+}
+
 /* Footer */
 
 .footer {

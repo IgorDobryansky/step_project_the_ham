@@ -343,6 +343,14 @@ window.onload = function () {
     itemSelector: ".grid-item",
     gutter: 20,
   });
+
+  grid.addEventListener("click", function (event) {
+    if (!matchesSelector(event.target, ".grid-item img")) {
+      return;
+    }
+    event.target.parentNode.classList.toggle("grid-item--gigante");
+    msnry.layout();
+  });
 };
 
 for (let i = 1; i <= 20; i++) {
