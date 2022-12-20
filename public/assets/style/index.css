@@ -81,7 +81,7 @@
     color: rgba(255, 255, 255, 0.6);
 }
 
-.nav-item:not(:last-child) {
+.nav-item {
     margin-right: 21px;
     height: 100%;
     display: flex;
@@ -92,9 +92,14 @@
 
 .header__search-icon {
     cursor: pointer;
+    margin: 0;
 }
 
-.nav-item:hover:not(:last-child) {
+.header__search-icon:hover {
+    fill: #18CFAB;
+}
+
+.nav-item:hover {
     color: #18CFAB;
     border-bottom: 2px solid #18CFAB;
 }
@@ -180,7 +185,7 @@
 }
 
 .button {
-    width: 175px;
+    width: 165px;
     font-weight: 700;
     background-color: white;
     padding-top: 5px;
@@ -199,13 +204,13 @@
 }
 
 .explore {
-    padding: 16px 20px 16px 20px;
+    padding: 22.5px 5px 22.5px 5px;
     border-radius: 4px;
     background-color: #18CFAB;
 }
 
 .purchase {
-    padding: 16px 20px 16px 20px;
+    padding: 22.5px 5px 22.5px 5px;
     border-radius: 4px;
     background-color: #00CBF6;
 }
@@ -215,14 +220,15 @@
 
 .squares {
     display: flex;
+    padding-top: 8px;
 }
 
 .square {
     width: 25%;
-    padding: 100px 0 110px 0;
+    padding: 100px 0 108px 0;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     font-family: 'Montserrat';
     font-style: normal;
@@ -404,6 +410,7 @@
 
 .purchase-buy {
     background: #18CFAB;
+    text-align: center;
 }
 
 /* Main */
@@ -419,9 +426,9 @@
 
 .work__tabs {
     margin-top: 69px;
-    width: 50%;
+    width: 589px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
@@ -432,15 +439,17 @@
 
 .work__tabs-item {
     border: 1px solid #DADADA;
-    width: 20%;
-    padding: 22px 0;
+    padding: 22px 15px;
     text-align: center;
     cursor: pointer;
 }
 
+.work__tabs-item:first-child {
+    padding: 22px 29px;
+}
+
 .work__tabs-item:hover {
-    border: 2px solid #18CFAB;
-    padding: 21px 0;
+    border: 1px solid #18CFAB;
     color: #18CFAB;
 }
 
@@ -676,9 +685,12 @@
 
 .people {
     width: 1160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.people.services-title {
+.people .services-title {
     font-family: 'Montserrat';
     font-weight: 400;
     font-size: 36px;
@@ -710,7 +722,7 @@
     top: 0;
     left: 50%;
     transform: translate(-50%, 0);
-    opacity: 0;
+    display: none;
 }
 
 .peoples-job-title {
@@ -722,15 +734,12 @@
     text-align: center;
     width: 100%;
     margin-top: 37px;
-    position: relative;
-    padding: 50px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 13px;
 }
 
 .peoples {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translate(-50%);
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
@@ -739,11 +748,11 @@
     text-transform: uppercase;
     color: #18CFAB;
     text-align: center;
-    opacity: 0;
+    display: none;
 }
 
 .active {
-    opacity: 1;
+    display: block;
     animation: show 100ms ease-in-out;
 }
 
@@ -777,44 +786,29 @@
     cursor: pointer;
 }
 
-.avatar-wrapper.chosen-scale {
-    transform: scale(2);
-    animation: chosenScale 100ms ease-in-out;
+.peoples-choosen {
+    width: 166px;
+    height: 166px;
+
+    margin-top: 25px;
 }
 
-@keyframes chosenScale {
-    0% {
-        transform: scale(1);
-    }
+.avatar-wrapper.chosen-scale {
+    width: 166px;
+    height: 166px;
+    border: 10.5px solid rgba(31, 218, 181, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-    50% {
-        transform: scale(1.5);
-    }
-
-    100% {
-        transform: scale(2);
-    }
+.avatar-wrapper.chosen-scale img {
+    width: 166px;
 }
 
 .avatar-wrapper.chosen {
     transform: translate(0, -10%);
     transition: 100ms ease-in-out;
-}
-
-.avatar-wrapper:nth-child(1) {
-    left: 0;
-}
-
-.avatar-wrapper:nth-child(2) {
-    left: 25%;
-}
-
-.avatar-wrapper:nth-child(3) {
-    right: 25%;
-}
-
-.avatar-wrapper:nth-child(4) {
-    right: 0;
 }
 
 .arrow-left,

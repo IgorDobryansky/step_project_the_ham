@@ -73,8 +73,9 @@ loadMore[0].addEventListener("click", () => {
 
 function breakingNews() {
   for (let i = 0; i < newsItemsArray.length; i++) {
-    const newsItem = document.createElement("div");
+    const newsItem = document.createElement("a");
     newsItem.className = "news__item";
+    newsItem.href = "#!";
     const newsItemImage = document.createElement("img");
     newsItemImage.className = "news__item-image";
     const newsItemDate = document.createElement("div");
@@ -130,7 +131,6 @@ for (let i = 0; i < avatarArray.length; i++) {
     removeChosen();
     avatarChosen.innerHTML = "";
     let cloneElement = avatarArray[i].cloneNode(true);
-    cloneElement.style.position = "static";
     avatarArray[i].classList.add("chosen");
     avatarChosen.append(cloneElement);
     cloneElement.classList.add("chosen-scale");
@@ -147,7 +147,6 @@ leftArrow.addEventListener("click", () => {
   chosenIndex--;
   if (chosenIndex < 0) chosenIndex = avatarArray.length - 1;
   let cloneElement = avatarArray[chosenIndex].cloneNode(true);
-  cloneElement.style.position = "static";
   avatarArray[chosenIndex].classList.add("chosen");
   avatarChosen.append(cloneElement);
   cloneElement.classList.add("chosen-scale");

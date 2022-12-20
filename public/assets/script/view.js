@@ -49,6 +49,7 @@ const tabsContentArray = [...tabsContent];
 function defaultServiceTabsStyle() {
   infoTabsArray.forEach((el) => {
     el.style.background = "#F8FCFE";
+    el.style.color = "#717171";
   });
 }
 
@@ -74,6 +75,7 @@ function showTabContent(index) {
 
 function activeServiceTabStyle(tab) {
   tab.style.background = "#18CFAB";
+  tab.style.color = "#FFFFFF";
 }
 
 infoTabsArray.forEach((tab, index) => {
