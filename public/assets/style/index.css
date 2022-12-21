@@ -93,10 +93,14 @@
 .header__search-icon {
     cursor: pointer;
     margin: 0;
+    width: 22px;
+    background-image: url(../icons/search.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
 }
 
 .header__search-icon:hover {
-    fill: #18CFAB;
+    background-image: url(../icons/search_hover.png);
 }
 
 .nav-item:hover {
